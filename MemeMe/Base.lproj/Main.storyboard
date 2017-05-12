@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Meme Editor View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="MemeEditorViewController" customModule="MemeMe" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="lIE-6E-wFE">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uKq-ND-IaD">
+                                <rect key="frame" x="24" y="543" width="327" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="SPn-w8-E3K"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="g4v-ak-J7j">
+                                <rect key="frame" x="24" y="84" width="327" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="mb2-Ge-JWS"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="HC4-o6-WgP">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="ElM-o5-HSY"/>
+                                </constraints>
+                                <items>
+                                    <barButtonItem enabled="NO" style="plain" systemItem="flexibleSpace" id="Zm5-fe-fmg"/>
+                                    <barButtonItem systemItem="action" id="Bb4-7C-gCx">
+                                        <connections>
+                                            <action selector="shareYourMemeWithEveryone:" destination="BYZ-38-t0r" id="IB5-DO-4hz"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem enabled="NO" style="plain" systemItem="flexibleSpace" id="54w-5w-tiS"/>
+                                    <barButtonItem systemItem="cancel" id="QI1-uL-Pfx">
+                                        <connections>
+                                            <action selector="cancelMemeAction:" destination="BYZ-38-t0r" id="tbt-qe-EIM"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem enabled="NO" style="plain" systemItem="flexibleSpace" id="6Mg-aV-Dvu"/>
+                                </items>
+                                <color key="tintColor" red="0.042720101589999997" green="0.18912686449999999" blue="0.16075482820000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </toolbar>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleAspectFill" translatesAutoresizingMaskIntoConstraints="NO" id="jZ7-5F-5BS">
+                                <rect key="frame" x="0.0" y="623" width="375" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="UYz-Nl-uMV"/>
+                                </constraints>
+                                <items>
+                                    <barButtonItem enabled="NO" style="plain" systemItem="flexibleSpace" id="p6z-0c-81f"/>
+                                    <barButtonItem tag="1" systemItem="camera" id="J6W-Yp-U2T">
+                                        <connections>
+                                            <action selector="getImageForMeme:" destination="BYZ-38-t0r" id="5mw-Ct-Wgc"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem enabled="NO" style="plain" systemItem="flexibleSpace" id="l8n-YE-9wc"/>
+                                    <barButtonItem tag="2" title="Photo Library" id="tIm-eb-b9W">
+                                        <connections>
+                                            <action selector="getImageForMeme:" destination="BYZ-38-t0r" id="Eal-Ei-hmp"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem enabled="NO" style="plain" systemItem="flexibleSpace" id="NSG-Wp-Hp0"/>
+                                </items>
+                                <color key="tintColor" red="0.04330491408" green="0.18912686449999999" blue="0.16059784199999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </toolbar>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="jZ7-5F-5BS" firstAttribute="top" secondItem="uKq-ND-IaD" secondAttribute="bottom" constant="40" id="1qa-6q-t1w"/>
+                            <constraint firstItem="g4v-ak-J7j" firstAttribute="top" secondItem="HC4-o6-WgP" secondAttribute="bottom" constant="40" id="2CE-3j-kyy"/>
+                            <constraint firstItem="lIE-6E-wFE" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="4HB-Vg-SiP"/>
+                            <constraint firstItem="lIE-6E-wFE" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="4q6-Ta-9Fd"/>
+                            <constraint firstItem="jZ7-5F-5BS" firstAttribute="bottom" secondItem="lIE-6E-wFE" secondAttribute="bottom" id="C9g-1Y-Q4i"/>
+                            <constraint firstItem="HC4-o6-WgP" firstAttribute="top" secondItem="lIE-6E-wFE" secondAttribute="top" id="Iif-rg-xAX"/>
+                            <constraint firstItem="jZ7-5F-5BS" firstAttribute="leading" secondItem="lIE-6E-wFE" secondAttribute="leading" id="Juy-fe-zq5"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="lIE-6E-wFE" secondAttribute="bottom" id="Khn-mv-EYE"/>
+                            <constraint firstItem="uKq-ND-IaD" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="8" id="Nuo-Th-Ugn"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="g4v-ak-J7j" secondAttribute="trailing" constant="8" id="Q5r-XI-Q2y"/>
+                            <constraint firstItem="jZ7-5F-5BS" firstAttribute="trailing" secondItem="lIE-6E-wFE" secondAttribute="trailing" id="Q6W-Bq-jwp"/>
+                            <constraint firstItem="HC4-o6-WgP" firstAttribute="leading" secondItem="lIE-6E-wFE" secondAttribute="leading" id="pCu-3U-Qbh"/>
+                            <constraint firstItem="g4v-ak-J7j" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="8" id="rJC-T5-prr"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="uKq-ND-IaD" secondAttribute="trailing" constant="8" id="rx5-fu-fMU"/>
+                            <constraint firstItem="HC4-o6-WgP" firstAttribute="trailing" secondItem="lIE-6E-wFE" secondAttribute="trailing" id="tdm-2G-r8J"/>
+                            <constraint firstAttribute="trailing" secondItem="lIE-6E-wFE" secondAttribute="trailing" id="xcf-Ea-c9P"/>
+                        </constraints>
+                    </view>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <connections>
+                        <outlet property="bottomTextField" destination="uKq-ND-IaD" id="dg8-Jg-vi9"/>
+                        <outlet property="bottomToolbar" destination="jZ7-5F-5BS" id="Itv-Af-Mff"/>
+                        <outlet property="cameraButton" destination="J6W-Yp-U2T" id="qju-Ix-DVg"/>
+                        <outlet property="cancelButton" destination="QI1-uL-Pfx" id="ggz-SA-dB8"/>
+                        <outlet property="imageForMeme" destination="lIE-6E-wFE" id="8Km-7r-sFJ"/>
+                        <outlet property="navigationToolbar" destination="HC4-o6-WgP" id="iM7-G6-b9N"/>
+                        <outlet property="shareButton" destination="Bb4-7C-gCx" id="986-er-Itd"/>
+                        <outlet property="topTextField" destination="g4v-ak-J7j" id="QgU-gD-q8Q"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="137.18140929535232"/>
+        </scene>
+    </scenes>
+</document>
