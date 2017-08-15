@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "E292CCEC423E91B5A033511D4F3932DC40D7D424",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "AD72B50E4E405049B6FE79DFDD43A4D4DD161168" : 9223372036854775807,
+    "E292CCEC423E91B5A033511D4F3932DC40D7D424" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "6F3E714F-BB12-4850-8A77-B2284E53854F",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "AD72B50E4E405049B6FE79DFDD43A4D4DD161168" : "",
+    "E292CCEC423E91B5A033511D4F3932DC40D7D424" : "MemeMe\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "MemeMe",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "MemeMe.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/frenigonda\/Udacity_MemeMe.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "AD72B50E4E405049B6FE79DFDD43A4D4DD161168"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/frenigonda\/Udacity_MemeMe.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "E292CCEC423E91B5A033511D4F3932DC40D7D424"
+    }
+  ]
+}

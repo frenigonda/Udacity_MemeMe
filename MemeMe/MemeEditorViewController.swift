@@ -100,7 +100,12 @@ UINavigationControllerDelegate, UITextFieldDelegate {
     // For Meme struct look for additional file
     func save() -> Meme {
         
-        return Meme(topText: topTextField.text!, bottomText: bottomTextField.text!, originalImage: imageForMeme.image!, memedImage: generateMemedImage())
+        let meme = Meme(topText: topTextField.text!, bottomText: bottomTextField.text!, originalImage: imageForMeme.image!, memedImage: generateMemedImage())
+        
+        (UIApplication.shared.delegate as! AppDelegate).memes.append(meme)
+        print("meme is saved")
+        print((UIApplication.shared.delegate as! AppDelegate).memes)
+        return meme
     }
     
     func generateMemedImage() -> UIImage {
